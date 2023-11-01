@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="DragonBallZ" customModuleProvider="target">
+            <connections>
+                <outlet property="EmailTextField" destination="l0Y-3j-XKz" id="1Lr-tk-bcq"/>
+                <outlet property="PasswordTextField" destination="YZv-h8-f7E" id="Qbp-Tq-z3S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoLogin" translatesAutoresizingMaskIntoConstraints="NO" id="WTd-bK-erQ">
+                    <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0vH-Eq-Znj">
+                    <rect key="frame" x="20" y="404.66666666666669" width="390" height="123.00000000000006"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3eX-MO-tze">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="69"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0Y-3j-XKz" userLabel="EmailTextField">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZv-h8-f7E" userLabel="PasswordTexField">
+                                    <rect key="frame" x="0.0" y="35" width="390" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtG-Q9-QG9" userLabel="LoginButton">
+                            <rect key="frame" x="0.0" y="79" width="390" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0C7-b4-Ogs"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                            <connections>
+                                <action selector="LoginButtonAction:" destination="-1" eventType="touchUpInside" id="zCS-ec-ihN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0vH-Eq-Znj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="PXN-ia-ZRw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WTd-bK-erQ" secondAttribute="trailing" id="TfM-12-11l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WTd-bK-erQ" secondAttribute="bottom" id="f4I-ep-tWw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0vH-Eq-Znj" secondAttribute="trailing" constant="20" id="mCu-SV-4wP"/>
+                <constraint firstItem="0vH-Eq-Znj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ris-W7-8GX"/>
+                <constraint firstItem="WTd-bK-erQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sTk-6a-ePF"/>
+                <constraint firstItem="WTd-bK-erQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vsj-zs-Jh2"/>
+            </constraints>
+            <point key="canvasLocation" x="124.18604651162791" y="-11.587982832618026"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FondoLogin" width="1116" height="1941"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
