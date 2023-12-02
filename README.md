@@ -1,4 +1,7 @@
 #Entrega del la práctica:
 
--se uso la misma UItableView para las vistas. Para la lista de heroes y lista de transformaciones se uso la misma celda, y para los detalles del héroe y los detalles de las trasnformaciones una misma celda también
--se realizaron todos los requisitos inclusive los requisitos opcionales
+(Detalles de las actualizaciones que se aplicaron con el nuevo commit)
+
+-se actualizaron los nombres de los controllers
+-se agregaron uitableviews para cada uitableviewcell
+-se aplicaron los principios solid de responsabilidad única, abierto cerrado y sustitución de liskov

@@ -1,19 +1,13 @@
 import Foundation
 
-struct DragonBallZNetworkModelToken{
-    //DragonBallZNetworkModelToken
-    static var token:String? = nil
-}
-
 final class DragonBallZNetworkModel{
     
-    //el session que se usara en todo el DragonBallZNetworkModel, en las task de las funciones
-    //cuando se instancie la clase DragonBallZNetworkModel session tendrá el valor por defecto ".shared", pero cuando instanciemos la clase en el archivo de test le pasaremos por parametro la session que se usara para el test
-    private var session: URLSession
-    init (session: URLSession = .shared) {
-        self.session = session
-    }
+    //token
+    static var token:String = ""
     
+    //session
+    static var session: URLSession = .shared
+
     //armamos los errores posibles a aparecer
     enum NetworkError:Error,Equatable {
         case unknown
@@ -24,10 +18,12 @@ final class DragonBallZNetworkModel{
         case statusCode(code:Int?)
         case noToken
     }
-    
+}
+
+extension DragonBallZNetworkModel{
     //"/api/auth/login/"
     //login (debe ser correcto el nombre y la password)
-    func login (email: String, password: String, completion: @escaping (NetworkError?)-> Void ){
+    private static func login (email: String, password: String, completion: @escaping (NetworkError?)-> Void ){
         
         //1)armamos los componentes de la url y mediante ella creamos la url que se le va a pasar al request
         var URLComponents = URLComponents()
@@ -77,15 +73,14 @@ final class DragonBallZNetworkModel{
                 return
             }
             
-            DragonBallZNetworkModelToken.token = token
+            self.token = token
             completion(nil)
         }
         task.resume()
     }
-
     //"/api/heros/all"
     //devolvemos la lista de heroes
-    func getHeroesList (completion: @escaping ([Hero],NetworkError?) -> Void ){
+    private static func getHeroesList (completion: @escaping ([Hero],NetworkError?) -> Void ){
         
         //1)armamos los componentes de la url y mediante ella creamos la url que se le va a pasar al request
         var URLComponents = URLComponents()
@@ -103,7 +98,7 @@ final class DragonBallZNetworkModel{
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = URLComponents.query?.data(using: .utf8)
-        request.setValue("Bearer \(DragonBallZNetworkModelToken.token!)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         
         //3)comenzamos el llamado a la request
         let task = session.dataTask(with: request) { data, response, error in
@@ -136,10 +131,9 @@ final class DragonBallZNetworkModel{
         }
         task.resume()
     }
-    
     //"/api/heros/tranformations"
     //devolvemos la lista de transformaciones del heroe
-    func getHeroeTransformations (heroId: String,completion: @escaping ([HeroTransformation],NetworkError?) -> Void ){
+    private static func getHeroeTransformations (heroId: String,completion: @escaping ([HeroTransformation],NetworkError?) -> Void ){
         
         //1)armamos los componentes de la url y mediante ella creamos la url que se le va a pasar al request
         var URLComponents = URLComponents()
@@ -156,7 +150,7 @@ final class DragonBallZNetworkModel{
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = URLComponents.query?.data(using: .utf8)
-        request.setValue("Bearer \(DragonBallZNetworkModelToken.token!)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
 
         //3)comenzamos el llamado a la request
         let task = session.dataTask(with: request) { data, response, error in
@@ -188,5 +182,37 @@ final class DragonBallZNetworkModel{
             completion(heroTransformations,nil)
         }
         task.resume()
+    }
+}
+
+extension DragonBallZNetworkModel{
+    static func login(email: String, password: String,completion: @escaping ()->Void){
+        login(email: email, password: password) { error in
+            guard error==nil else {
+                print("Error: \(String(describing: error))")
+                return
+            }
+            completion()
+        }
+    }
+    static func getHeroesList(completion: @escaping ([Hero]) -> Void){
+        getHeroesList {data, error in
+            guard error == nil else {
+                print("Error: \(String(describing: error))")
+                completion([])
+                return
+            }
+            completion(data)
+        }
+    }
+    static func getTransformationsList(heroId: String, completion: @escaping ([HeroTransformation]) -> Void){
+        getHeroeTransformations(heroId: heroId) { data, error in
+            guard error == nil else {
+                print("Error: \(String(describing: error))")
+                completion([])
+                return
+            }
+            completion(data)
+        }
     }
 }

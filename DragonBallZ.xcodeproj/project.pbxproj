@@ -11,18 +11,25 @@
 		F16870FF2AD633A40032BB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16870FE2AD633A40032BB4B /* SceneDelegate.swift */; };
 		F16871062AD633A60032BB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16871052AD633A60032BB4B /* Assets.xcassets */; };
 		F16871092AD633A60032BB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16871072AD633A60032BB4B /* LaunchScreen.storyboard */; };
-		F16871132AD634270032BB4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16871112AD634270032BB4B /* LoginViewController.swift */; };
-		F16871142AD634270032BB4B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16871122AD634270032BB4B /* LoginViewController.xib */; };
+		F16871132AD634270032BB4B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16871112AD634270032BB4B /* Login.swift */; };
+		F16871142AD634270032BB4B /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16871122AD634270032BB4B /* Login.xib */; };
 		F16871182AD634820032BB4B /* DragonBallZNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16871172AD634820032BB4B /* DragonBallZNetworkModel.swift */; };
 		F1694EE52ADA32AA00892A1E /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1694EE42ADA32AA00892A1E /* Hero.swift */; };
-		F1694F002ADE407200892A1E /* HeroeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1694EFE2ADE407200892A1E /* HeroeDetailTableViewCell.swift */; };
-		F1694F012ADE407200892A1E /* HeroeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1694EFF2ADE407200892A1E /* HeroeDetailTableViewCell.xib */; };
+		F1694F002ADE407200892A1E /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1694EFE2ADE407200892A1E /* DetailCell.swift */; };
+		F1694F012ADE407200892A1E /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1694EFF2ADE407200892A1E /* DetailCell.xib */; };
 		F1694F062AE1AF6F00892A1E /* HeroTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1694F052AE1AF6F00892A1E /* HeroTransformation.swift */; };
 		F1694F152AE5EF8300892A1E /* DragonBallZNetworkModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1694F142AE5EF8300892A1E /* DragonBallZNetworkModelTest.swift */; };
-		F1CCD8F92AD787E500D40ADA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CCD8F72AD787E500D40ADA /* TableViewController.swift */; };
-		F1CCD8FA2AD787E500D40ADA /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CCD8F82AD787E500D40ADA /* TableViewController.xib */; };
-		F1CCD9012AD78D9A00D40ADA /* HeroeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CCD8FF2AD78D9A00D40ADA /* HeroeTableViewCell.swift */; };
-		F1CCD9022AD78D9A00D40ADA /* HeroeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CCD9002AD78D9A00D40ADA /* HeroeTableViewCell.xib */; };
+		F16EAC4A2B0EA7F9009B8B66 /* TransformationsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16EAC482B0EA7F9009B8B66 /* TransformationsTable.swift */; };
+		F16EAC4B2B0EA7F9009B8B66 /* TransformationTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16EAC492B0EA7F9009B8B66 /* TransformationTable.xib */; };
+		F16EAC4E2B0EA817009B8B66 /* TransformationDetailTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16EAC4C2B0EA817009B8B66 /* TransformationDetailTable.swift */; };
+		F16EAC4F2B0EA817009B8B66 /* TransformationDetailTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16EAC4D2B0EA817009B8B66 /* TransformationDetailTable.xib */; };
+		F16EAC522B0EA97F009B8B66 /* HeroDetailTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16EAC502B0EA97F009B8B66 /* HeroDetailTable.swift */; };
+		F16EAC532B0EA97F009B8B66 /* HeroDetailTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16EAC512B0EA97F009B8B66 /* HeroDetailTable.xib */; };
+		F16EAC572B0ED7E0009B8B66 /* UiNavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16EAC562B0ED7E0009B8B66 /* UiNavigationControllerExtension.swift */; };
+		F1CCD8F92AD787E500D40ADA /* HeroesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CCD8F72AD787E500D40ADA /* HeroesTable.swift */; };
+		F1CCD8FA2AD787E500D40ADA /* HeroTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CCD8F82AD787E500D40ADA /* HeroTable.xib */; };
+		F1CCD9012AD78D9A00D40ADA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CCD8FF2AD78D9A00D40ADA /* Cell.swift */; };
+		F1CCD9022AD78D9A00D40ADA /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CCD9002AD78D9A00D40ADA /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,19 +49,26 @@
 		F16871052AD633A60032BB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F16871082AD633A60032BB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F168710A2AD633A60032BB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F16871112AD634270032BB4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F16871122AD634270032BB4B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F16871112AD634270032BB4B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F16871122AD634270032BB4B /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		F16871172AD634820032BB4B /* DragonBallZNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallZNetworkModel.swift; sourceTree = "<group>"; };
 		F1694EE42ADA32AA00892A1E /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
-		F1694EFE2ADE407200892A1E /* HeroeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailTableViewCell.swift; sourceTree = "<group>"; };
-		F1694EFF2ADE407200892A1E /* HeroeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroeDetailTableViewCell.xib; sourceTree = "<group>"; };
+		F1694EFE2ADE407200892A1E /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		F1694EFF2ADE407200892A1E /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		F1694F052AE1AF6F00892A1E /* HeroTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTransformation.swift; sourceTree = "<group>"; };
 		F1694F0B2AE5EE6200892A1E /* DragonBallZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1694F142AE5EF8300892A1E /* DragonBallZNetworkModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallZNetworkModelTest.swift; sourceTree = "<group>"; };
-		F1CCD8F72AD787E500D40ADA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		F1CCD8F82AD787E500D40ADA /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
-		F1CCD8FF2AD78D9A00D40ADA /* HeroeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeTableViewCell.swift; sourceTree = "<group>"; };
-		F1CCD9002AD78D9A00D40ADA /* HeroeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroeTableViewCell.xib; sourceTree = "<group>"; };
+		F16EAC482B0EA7F9009B8B66 /* TransformationsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsTable.swift; sourceTree = "<group>"; };
+		F16EAC492B0EA7F9009B8B66 /* TransformationTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationTable.xib; sourceTree = "<group>"; };
+		F16EAC4C2B0EA817009B8B66 /* TransformationDetailTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationDetailTable.swift; sourceTree = "<group>"; };
+		F16EAC4D2B0EA817009B8B66 /* TransformationDetailTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationDetailTable.xib; sourceTree = "<group>"; };
+		F16EAC502B0EA97F009B8B66 /* HeroDetailTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailTable.swift; sourceTree = "<group>"; };
+		F16EAC512B0EA97F009B8B66 /* HeroDetailTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroDetailTable.xib; sourceTree = "<group>"; };
+		F16EAC562B0ED7E0009B8B66 /* UiNavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiNavigationControllerExtension.swift; sourceTree = "<group>"; };
+		F1CCD8F72AD787E500D40ADA /* HeroesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTable.swift; sourceTree = "<group>"; };
+		F1CCD8F82AD787E500D40ADA /* HeroTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTable.xib; sourceTree = "<group>"; };
+		F1CCD8FF2AD78D9A00D40ADA /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		F1CCD9002AD78D9A00D40ADA /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +110,12 @@
 		F16870FB2AD633A40032BB4B /* DragonBallZ */ = {
 			isa = PBXGroup;
 			children = (
+				F168710A2AD633A60032BB4B /* Info.plist */,
+				F1DB4A552B0DBB8B00F8EE91 /* App */,
 				F16871162AD634650032BB4B /* Models */,
 				F16871152AD6342D0032BB4B /* Views */,
 				F16871102AD634070032BB4B /* Controllers */,
-				F16870FC2AD633A40032BB4B /* AppDelegate.swift */,
-				F16870FE2AD633A40032BB4B /* SceneDelegate.swift */,
-				F16871072AD633A60032BB4B /* LaunchScreen.storyboard */,
-				F16871052AD633A60032BB4B /* Assets.xcassets */,
-				F168710A2AD633A60032BB4B /* Info.plist */,
+				F16EAC542B0ED794009B8B66 /* Extensions */,
 			);
 			path = DragonBallZ;
 			sourceTree = "<group>";
@@ -111,10 +123,13 @@
 		F16871102AD634070032BB4B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F16871112AD634270032BB4B /* LoginViewController.swift */,
-				F1CCD8F72AD787E500D40ADA /* TableViewController.swift */,
-				F1CCD8FF2AD78D9A00D40ADA /* HeroeTableViewCell.swift */,
-				F1694EFE2ADE407200892A1E /* HeroeDetailTableViewCell.swift */,
+				F16871112AD634270032BB4B /* Login.swift */,
+				F1CCD8F72AD787E500D40ADA /* HeroesTable.swift */,
+				F16EAC502B0EA97F009B8B66 /* HeroDetailTable.swift */,
+				F16EAC482B0EA7F9009B8B66 /* TransformationsTable.swift */,
+				F16EAC4C2B0EA817009B8B66 /* TransformationDetailTable.swift */,
+				F1CCD8FF2AD78D9A00D40ADA /* Cell.swift */,
+				F1694EFE2ADE407200892A1E /* DetailCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -122,10 +137,13 @@
 		F16871152AD6342D0032BB4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F16871122AD634270032BB4B /* LoginViewController.xib */,
-				F1CCD8F82AD787E500D40ADA /* TableViewController.xib */,
-				F1CCD9002AD78D9A00D40ADA /* HeroeTableViewCell.xib */,
-				F1694EFF2ADE407200892A1E /* HeroeDetailTableViewCell.xib */,
+				F16871122AD634270032BB4B /* Login.xib */,
+				F1CCD8F82AD787E500D40ADA /* HeroTable.xib */,
+				F16EAC512B0EA97F009B8B66 /* HeroDetailTable.xib */,
+				F16EAC492B0EA7F9009B8B66 /* TransformationTable.xib */,
+				F16EAC4D2B0EA817009B8B66 /* TransformationDetailTable.xib */,
+				F1CCD9002AD78D9A00D40ADA /* Cell.xib */,
+				F1694EFF2ADE407200892A1E /* DetailCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +164,25 @@
 				F1694F142AE5EF8300892A1E /* DragonBallZNetworkModelTest.swift */,
 			);
 			path = DragonBallZTests;
+			sourceTree = "<group>";
+		};
+		F16EAC542B0ED794009B8B66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F16EAC562B0ED7E0009B8B66 /* UiNavigationControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1DB4A552B0DBB8B00F8EE91 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F16870FC2AD633A40032BB4B /* AppDelegate.swift */,
+				F16870FE2AD633A40032BB4B /* SceneDelegate.swift */,
+				F16871072AD633A60032BB4B /* LaunchScreen.storyboard */,
+				F16871052AD633A60032BB4B /* Assets.xcassets */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +232,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F16870F82AD633A40032BB4B = {
 						CreatedOnToolsVersion = 15.0;
@@ -230,12 +268,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CCD9022AD78D9A00D40ADA /* HeroeTableViewCell.xib in Resources */,
+				F16EAC4F2B0EA817009B8B66 /* TransformationDetailTable.xib in Resources */,
+				F1CCD9022AD78D9A00D40ADA /* Cell.xib in Resources */,
 				F16871092AD633A60032BB4B /* LaunchScreen.storyboard in Resources */,
-				F1CCD8FA2AD787E500D40ADA /* TableViewController.xib in Resources */,
-				F1694F012ADE407200892A1E /* HeroeDetailTableViewCell.xib in Resources */,
+				F1CCD8FA2AD787E500D40ADA /* HeroTable.xib in Resources */,
+				F16EAC4B2B0EA7F9009B8B66 /* TransformationTable.xib in Resources */,
+				F1694F012ADE407200892A1E /* DetailCell.xib in Resources */,
 				F16871062AD633A60032BB4B /* Assets.xcassets in Resources */,
-				F16871142AD634270032BB4B /* LoginViewController.xib in Resources */,
+				F16EAC532B0EA97F009B8B66 /* HeroDetailTable.xib in Resources */,
+				F16871142AD634270032BB4B /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F16871132AD634270032BB4B /* LoginViewController.swift in Sources */,
-				F1CCD9012AD78D9A00D40ADA /* HeroeTableViewCell.swift in Sources */,
+				F16871132AD634270032BB4B /* Login.swift in Sources */,
+				F1CCD9012AD78D9A00D40ADA /* Cell.swift in Sources */,
+				F16EAC522B0EA97F009B8B66 /* HeroDetailTable.swift in Sources */,
+				F16EAC4A2B0EA7F9009B8B66 /* TransformationsTable.swift in Sources */,
 				F16870FD2AD633A40032BB4B /* AppDelegate.swift in Sources */,
-				F1694F002ADE407200892A1E /* HeroeDetailTableViewCell.swift in Sources */,
-				F1CCD8F92AD787E500D40ADA /* TableViewController.swift in Sources */,
+				F16EAC572B0ED7E0009B8B66 /* UiNavigationControllerExtension.swift in Sources */,
+				F1694F002ADE407200892A1E /* DetailCell.swift in Sources */,
+				F1CCD8F92AD787E500D40ADA /* HeroesTable.swift in Sources */,
 				F16871182AD634820032BB4B /* DragonBallZNetworkModel.swift in Sources */,
 				F1694EE52ADA32AA00892A1E /* Hero.swift in Sources */,
+				F16EAC4E2B0EA817009B8B66 /* TransformationDetailTable.swift in Sources */,
 				F1694F062AE1AF6F00892A1E /* HeroTransformation.swift in Sources */,
 				F16870FF2AD633A40032BB4B /* SceneDelegate.swift in Sources */,
 			);
